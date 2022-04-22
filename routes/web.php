@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 // 1. You will need to import the exact controller namespace path
-use _________________________?
+use App\Http\Controllers\BooksController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +25,7 @@ Route::post('/register-user', [BooksController::class, '?????']);
 Route::get('/select-books', [BooksController::class, 'listBooks']);
 
 // 4. Specify the missing HTTP request method
-Route::_______('/reserve-books', [BooksController::class, 'reserveBooks']);
+Route::post('/reserve-books', [BooksController::class, 'reserveBooks']);
 
  // 5. Specify the missing endpoint that will be used for displaying the thank you page
 Route::get('????????????????', [BooksController::class, 'showThankYouPage']);
